@@ -1,0 +1,10 @@
+<div class="search-bar">
+  <img src="/assets/images/icon-search.svg" alt="" />
+  <input
+    #textInput="ngModel"
+    type="text"
+    [(ngModel)]="searchValue"
+    placeholder="Search for movies or tv series"
+    (change)="(searchInput)"
+  />
+</div>

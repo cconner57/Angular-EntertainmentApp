@@ -1,0 +1,74 @@
+.mediaItem {
+  height: 226px;
+  width: 280px;
+  margin: 0 40px 32px 0;
+  .mediaImage {
+    position: relative;
+    .bannerImage {
+      border-radius: 8px;
+    }
+    .bookmark {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      background-color: hsla(223, 30%, 9%, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .trendingDetails {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      display: flex;
+      flex-direction: column;
+      .details {
+        display: flex;
+        img {
+          height: 12px;
+          width: 12px;
+          margin-right: 6px;
+        }
+        p {
+          font-family: "Outfit";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 16px;
+        }
+        .dot {
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    img {
+      height: 12px;
+      width: 12px;
+      margin-right: 6px;
+    }
+    p {
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .dot {
+      margin: 0 8px;
+    }
+  }
+  .title {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

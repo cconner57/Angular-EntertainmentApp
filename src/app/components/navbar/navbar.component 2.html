@@ -1,0 +1,36 @@
+<div class="navbar">
+  <div class="container">
+    <img class="home" src="/assets/images/logo.svg" alt="film" (click)="changeRoute('/home')"/>
+    <div class="menu">
+      <img
+        class="menu__item"
+        src="/assets/images/icon-nav-home.svg"
+        alt=""
+        [ngClass]="{ '--active': currentRoute === '/home' }"
+        (click)="changeRoute('/home')"
+      />
+      <img
+        class="menu__item"
+        src="/assets/images/icon-nav-movies.svg"
+        alt=""
+        [ngClass]="{ '--active': currentRoute === '/movies' }"
+        (click)="changeRoute('/movies')"
+      />
+      <img
+        class="menu__item"
+        src="/assets/images/icon-nav-tv-series.svg"
+        alt=""
+        [ngClass]="{ '--active': currentRoute === '/tv' }"
+        (click)="changeRoute('/tv')"
+      />
+      <img
+        class="menu__item"
+        src="/assets/images/icon-nav-bookmark.svg"
+        alt=""
+        [ngClass]="{ '--active': currentRoute === '/bookmarked' }"
+        (click)="changeRoute('/bookmarked')"
+      />
+    </div>
+  </div>
+  <img class="profile" src="/assets/images/image-avatar.png" alt="" />
+</div>

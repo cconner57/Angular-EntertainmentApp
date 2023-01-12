@@ -9,6 +9,9 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { TvComponent } from './components/tv/tv.component';
 import { BookmarkedComponent } from './components/bookmarked/bookmarked.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { MediaItemComponent } from './components/media-item/media-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { SettingsComponent } from './components/settings/settings.component';
     MoviesComponent,
     TvComponent,
     BookmarkedComponent,
-    SettingsComponent
+    SettingsComponent,
+    NavbarComponent,
+    SearchbarComponent,
+    MediaItemComponent
   ],
   imports: [
     BrowserModule,

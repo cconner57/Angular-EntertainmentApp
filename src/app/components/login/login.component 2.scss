@@ -1,0 +1,74 @@
+@import "../../app.component.scss";
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  .container {
+    background-color: $darkGray;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px 0px hsl(224, 36%, 25%);
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    transition: box-shadow 0.5s linear;
+    width: 400px;
+    &:hover {
+      box-shadow: 5px 5px 8px 0px hsl(224, 36%, 40%);
+      transition: box-shadow 0.5s linear;
+    }
+    h1 {
+      @include text($size: 32px, $height: 40px);
+      letter-spacing: -0.5px;
+      margin-bottom: 40px;
+    }
+    input {
+      height: 37px;
+      width: 100%;
+      background-color: transparent;
+      border-bottom: 1px solid $lightGray;
+      padding-left: 16px;
+      margin-bottom: 24px;
+      &::placeholder {
+        @include text($size: 15px, $height: 19px);
+      }
+    }
+    button {
+      @include text($size: 15px, $height: 48px);
+      background-color: $red;
+      border-radius: 6px;
+      cursor: pointer;
+      height: 48px;
+      margin: 16px 0 24px;
+      overflow: hidden;
+      transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+      width: 336px;
+      &:hover {
+        background-color: $white;
+        color: $darkGray;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+      }
+      &:active {
+        transition: translate 0.05s ease-in-out;
+        translate: -1px -1px;
+      }
+    }
+    span {
+      display: flex;
+      align-self: center;
+      p {
+        @include text($size: 15px, $height: 19px);
+      }
+      p:first-child {
+        margin-right: 9px;
+      }
+      .signup {
+        color: $red;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

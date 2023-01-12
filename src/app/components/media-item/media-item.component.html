@@ -1,0 +1,64 @@
+<div
+  class="mediaItem"
+  [ngStyle]="{
+    height: isTrending ? '230px' : '226px',
+    width: isTrending ? '470px' : '280px'
+  }"
+>
+  <div class="mediaImage">
+    <img
+      class="bannerImage"
+      [ngStyle]="{
+        height: isTrending ? '230px' : '174px',
+        width: isTrending ? '470px' : '280px'
+      }"
+      src="{{ mediaItem.thumbnail.regular.large }}"
+      alt=""
+    />
+    <div class="bookmark">
+      <img src="/assets/images/icon-bookmark-empty.svg" alt="bookmark" />
+    </div>
+    <div *ngIf="isTrending" [ngClass]="{ trendingDetails: isTrending }">
+      <div class="details">
+        <p>{{ mediaItem.year }}</p>
+        <p class="dot">•</p>
+        <img
+          src="{{
+            mediaItem.category === 'Movie'
+              ? './assets/images/icon-category-movie.svg'
+              : './assets/images/icon-category-tv.svg'
+          }}"
+          alt=""
+        />
+        <p>
+          {{ mediaItem.category }}
+        </p>
+        <p class="dot">•</p>
+        <p>
+          {{ mediaItem.rating }}
+        </p>
+      </div>
+      <p *ngIf="isTrending" class="title">{{ mediaItem.title }}</p>
+    </div>
+  </div>
+  <div *ngIf="!isTrending" [ngClass]="{ details: !isTrending }">
+    <p>{{ mediaItem.year }}</p>
+    <p class="dot">•</p>
+    <img
+      src="{{
+        mediaItem.category === 'Movie'
+          ? './assets/images/icon-category-movie.svg'
+          : './assets/images/icon-category-tv.svg'
+      }}"
+      alt=""
+    />
+    <p>
+      {{ mediaItem.category }}
+    </p>
+    <p class="dot">•</p>
+    <p>
+      {{ mediaItem.rating }}
+    </p>
+  </div>
+  <p *ngIf="!isTrending" class="title">{{ mediaItem.title }}</p>
+</div>

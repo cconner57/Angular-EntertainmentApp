@@ -1,0 +1,21 @@
+<div class="bookmarked">
+    <app-searchbar></app-searchbar>
+    <div class="container">
+      <h1>Bookmarked Movies</h1>
+      <div class="media">
+        <app-media-item
+          *ngFor="let item of movieLibrary"
+          [mediaItem]="item"
+          [isTrending]="false"
+        ></app-media-item>
+      </div>
+      <h1>Bookmarked TV Series</h1>
+      <div class="media">
+        <app-media-item
+          *ngFor="let item of tvLibrary"
+          [mediaItem]="item"
+          [isTrending]="false"
+        ></app-media-item>
+      </div>
+    </div>
+  </div>

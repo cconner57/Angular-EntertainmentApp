@@ -1,0 +1,21 @@
+<div class="home">
+  <app-searchbar></app-searchbar>
+  <div class="container">
+    <h1>Trending</h1>
+    <div class="trending">
+      <app-media-item
+        *ngFor="let item of trendingItems"
+        [mediaItem]="item"
+        [isTrending]="true"
+      ></app-media-item>
+    </div>
+    <h1>Recommended for you</h1>
+    <div class="media">
+      <app-media-item
+        *ngFor="let item of library"
+        [mediaItem]="item"
+        [isTrending]="false"
+      ></app-media-item>
+    </div>
+  </div>
+</div>

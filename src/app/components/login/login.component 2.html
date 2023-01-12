@@ -1,0 +1,25 @@
+<div class="login">
+  <div class="container">
+    <h1>{{ page === "login" ? "Login" : "Sign Up" }}</h1>
+    <div>
+      <input type="email" name="" id="" placeholder="Email address" />
+      <input type="password" name="" id="" placeholder="Password" />
+      <input
+        *ngIf="page === 'signup'"
+        type="password"
+        name=""
+        id=""
+        placeholder="Repeat password"
+      />
+    </div>
+    <button type="submit" (click)="submitLogin()">
+      {{ page === "login" ? "Login to your account" : "Create an account" }}
+    </button>
+    <span>
+      <p>Don't have an account?</p>
+      <p class="signup" (click)="changeToSignup()">
+        {{ page !== "login" ? "Login" : "Sign Up" }}
+      </p>
+    </span>
+  </div>
+</div>

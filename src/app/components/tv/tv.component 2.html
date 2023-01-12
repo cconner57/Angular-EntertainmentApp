@@ -1,0 +1,13 @@
+<div class="tv">
+  <app-searchbar></app-searchbar>
+  <div class="container">
+    <h1>TV Series</h1>
+    <div class="media">
+      <app-media-item
+        *ngFor="let item of library"
+        [mediaItem]="item"
+        [isTrending]="false"
+      ></app-media-item>
+    </div>
+  </div>
+</div>

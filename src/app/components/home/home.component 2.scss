@@ -1,0 +1,27 @@
+.home {
+  margin-top: 32px;
+  .container {
+    height: 85vh;
+    width: 89vw;
+    margin-left: 36px;
+    overflow: scroll;
+    h1 {
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.5px;
+    }
+    .trending {
+      margin-top: 25px;
+      display: flex;
+      overflow: scroll;
+    }
+    .media {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

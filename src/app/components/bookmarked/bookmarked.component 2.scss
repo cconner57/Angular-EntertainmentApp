@@ -1,0 +1,21 @@
+.bookmarked {
+  margin-top: 32px;
+  .container {
+    height: 85vh;
+    width: 89vw;
+    margin-left: 36px;
+    overflow: scroll;
+    h1 {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.5px;
+    }
+    .media {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
